@@ -1,0 +1,22 @@
+<%- include('partials/head'); %>
+<body>
+    <a href="/usuarios">IR A USUARIOS</a>
+    HOLA DESDE EJS
+    <br>
+    <br>
+    <%= titulo %>
+    <br>
+    <br>
+    <h2> Casas </h2>
+    <ul>
+    <% for(let i = 0; i< casas.length ; i++) { %>
+         
+        <li id=<%= i+1 %> > <%= casas[i].colorCasa %> - <%= i+1 %> </li>
+
+    <% }; %>
+    </ul>
+    <script>
+
+    </script>
+</body>
+</html>
